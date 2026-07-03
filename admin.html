@@ -119,10 +119,39 @@
         }
     </style>
 </head>
+<!-- Mobile Tab Bar (visible only on small screens) -->
+<nav class="md:hidden sticky top-0 z-40 bg-surface-container-low border-b border-outline-variant/20 flex items-center overflow-x-auto gap-1 px-2 h-14 shrink-0">
+    <a href="index.html" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-secondary font-label-bold text-[11px] hover:bg-secondary/10 transition-colors">
+        <span class="material-symbols-outlined text-[18px]">coffee</span>
+        <span>Home</span>
+    </a>
+    <div class="w-px h-6 bg-outline-variant/30 shrink-0"></div>
+    <a id="mob-nav-overview" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg font-label-bold text-[11px] transition-colors active-nav-link cursor-pointer" onclick="switchPanel('overview')">
+        <span class="material-symbols-outlined text-[18px]">dashboard</span>
+        <span>Overview</span>
+    </a>
+    <a id="mob-nav-menu" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-on-surface-variant font-label-bold text-[11px] hover:bg-surface-variant/50 transition-colors cursor-pointer" onclick="switchPanel('menu')">
+        <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+        <span>Menu</span>
+    </a>
+    <a id="mob-nav-orders" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-on-surface-variant font-label-bold text-[11px] hover:bg-surface-variant/50 transition-colors cursor-pointer" onclick="switchPanel('orders')">
+        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+        <span>Orders</span>
+    </a>
+    <a id="mob-nav-reservations" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-on-surface-variant font-label-bold text-[11px] hover:bg-surface-variant/50 transition-colors cursor-pointer" onclick="switchPanel('reservations')">
+        <span class="material-symbols-outlined text-[18px]">event_seat</span>
+        <span>Reservations</span>
+    </a>
+    <a id="mob-nav-reviews" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-on-surface-variant font-label-bold text-[11px] hover:bg-surface-variant/50 transition-colors cursor-pointer" onclick="switchPanel('reviews')">
+        <span class="material-symbols-outlined text-[18px]">rate_review</span>
+        <span>Reviews</span>
+    </a>
+</nav>
+
 <body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col md:flex-row">
 <div class="fixed inset-0 grain-overlay z-[-1]"></div>
-<!-- Side Navigation Bar -->
-<aside class="w-full md:w-64 bg-surface-container-low dark:bg-surface-container-lowest border-r border-outline-variant/20 flex flex-col z-40 h-auto md:h-screen sticky top-0">
+<!-- Side Navigation Bar (desktop only) -->
+<aside class="hidden md:flex w-64 bg-surface-container-low border-r border-outline-variant/20 flex-col z-40 h-screen sticky top-0">
 <div class="p-6 flex items-center gap-3">
 <a href="index.html" class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-3xl">coffee</span>
@@ -424,7 +453,7 @@
         // Show selected panel
         document.getElementById(`panel-${panelId}`).classList.remove('hidden');
 
-        // Toggle active styles on sidebar links
+        // Toggle active styles on sidebar links (desktop)
         document.querySelectorAll('aside nav a').forEach(a => {
             a.classList.remove('active-nav-link');
             a.classList.add('text-on-surface-variant');
@@ -433,6 +462,17 @@
         if (activeLink) {
             activeLink.classList.add('active-nav-link');
             activeLink.classList.remove('text-on-surface-variant');
+        }
+
+        // Toggle active styles on mobile tab bar
+        document.querySelectorAll('[id^="mob-nav-"]').forEach(a => {
+            a.classList.remove('active-nav-link');
+            a.classList.add('text-on-surface-variant');
+        });
+        const mobActiveLink = document.getElementById(`mob-nav-${panelId}`);
+        if (mobActiveLink) {
+            mobActiveLink.classList.add('active-nav-link');
+            mobActiveLink.classList.remove('text-on-surface-variant');
         }
 
         // Set tagline
