@@ -346,7 +346,7 @@ function injectCartDrawer() {
     if (!document.getElementById("cart-fab")) {
         const fab = document.createElement("button");
         fab.id = "cart-fab";
-        fab.className = "fixed bottom-8 right-8 w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 hover:bg-secondary/90";
+        fab.className = "fixed bottom-20 md:bottom-8 right-4 md:right-8 w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 hover:bg-secondary/90";
         fab.innerHTML = `
             <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
             <span id="cart-badge" class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-white font-bold opacity-0 transition-opacity">0</span>
