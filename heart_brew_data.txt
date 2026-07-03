@@ -1,0 +1,139 @@
+# Heart & Brew Cafe and Restro - Project Data
+
+## Business Info
+- **Name**: Heart & Brew Cafe and Restro
+- **Category**: Cafe
+- **Rating**: 4.6 stars (35 reviews)
+- **Price Range**: ₹200–400 per person
+- **Address**: GF SR 1, Shree Siddheshwar Business Harbour, Narayan Vidhyalay Road, NH 48, Dabhoi - Waghodia Ring Rd, Vadodara, Gujarat 390025
+- **Phone**: 098250 60779
+- **Hours**: 11:30 am – 1:30 am (Daily)
+- **Amenities**: Takeaway, Dine-in, Seating, Table service, Family friendly, LGBTQ+ friendly, Google Pay, Good for kids, Free parking (Garage, Lot, Street, On-site).
+
+## Menu
+### Sandwiches
+- Crab Sandwich: 250
+- Exotic Veggies Sandwich: 250
+- Mushroom Cheesy Sandwich: 249
+- Paneer Spicy Sandwich: 229
+- Chorizo Sandwich: 210
+
+### Wraps
+- Cheese Wraps: 189
+- Spicy Paneer Wraps: 179
+- Cloud Wraps: 179
+- Dream Wrap: 179
+
+### Fries
+- Classic Fries: 89
+- Peri Peri Fries: 99
+- Cheese Fries: 189
+- Messy Fries: 249
+
+### Premium Fries
+- Premium Classic Fries: 179
+- Peri Peri Fries Premium: 210
+- Mexican Fries Premium: 249
+
+### Potato Specials
+- Classic Potato Twister: 119
+- Peri Peri Potato Twister: 129
+- Cheese Potato Twister: 149
+- Potato Wedges: 210
+
+### Toast
+- Butter Toast: 80
+- Jam Toast: 80
+- Butter Jam Toast: 90
+- Classic Bruschetta Toast: 149
+- Cheese Mushroom Toast: 189
+
+### Snacks
+- Onion Rings (12 pcs): 159
+- Veggie Stick (12 pcs): 139
+- Steam Momos Veg (7 pcs): 149
+- Fry Momos Veg (7 pcs): 149
+- Cheese Jalapeno Pops (12 pcs): 159
+
+### Breads & Parathas
+- Cheese Garlic Bread: 189
+- Cheese Chili Garlic Bread: 189
+- Paneer Paratha (2 pcs): 160
+- Aloo Paratha (2 pcs): 110
+- Switz Paratha (2 pcs): 99
+
+### Nachos
+- Cheese Nachos: 180
+- Mexican Cheese Nachos: 249
+
+### Mojitos (179 each unless noted)
+- Classic, Blueberry, Strawberry, Cranberry, Green Apple, Fresh Lime Soda, Watermelon, Piche, Piche Passion, Cucumber, Elder Flower.
+- BubbleGum Mojito: 120
+
+### Pasta
+- Alfredo Pasta: 289
+- Arrabiata Pasta: 259
+- Pesto Pasta: 299
+- Pink Blush Pasta: 289
+- Aglio e Olio Spaghetti: 310
+- Roasted Garlic Spaghetti: 279
+
+### Rice Bowls (349 each)
+- Italian, Indian, Mexican.
+
+### Frappe
+- Blended Cold Coffee: 179
+- Mocha Frappe: 249
+- Neutella Frappe: 279
+- BourniVita Frappe: 199
+- Biscoff Frappe: 259
+- Peanut Nuetella Frappe: 249
+- Hazelnut Frappe: 229
+- Iris Frappe: 239
+- Java Chip Frappe: 239
+- Kit Kat Frappe: 229
+- Oreo Frappe: 279
+- Caramel Frappe: 229
+- Vanilla Frappe: 229
+- Elder Flower Frappe: 249
+- Horlick Frappe: 249
+
+### Burgers
+- Classic Burger: 49
+- Cheese Burger: 169
+- Spicy Paneer Burger: 249
+- Spicy Mix Veg Burger: 131
+- Italian Tikki Burger: 149
+
+### Combos
+- Classic Burger + Fries + Drink: 231
+- Cheesy Burger + Fries + Drink: 362
+- Gourmet Burger + Fries + Drink: 410
+
+### Pizza (10 inch)
+- Margherita Pizza: 189
+- Farm House Pizza: 349
+- Mushroom Pizza: 219
+- Paneer Pizza: 210
+- Sweetcorn Pizza: 199
+- Four Cheese Pizza: 279
+- Heart & Brew Special Pizza: 349
+- Spicy Four Cheese Pizza: 259
+
+### Ice Coffee
+- Ice Late: 210
+- Ice Capuccino: 210
+- Ice Mocha: 249
+- Ice Americano: 189
+- Ice Cortado: 279
+- Ice RedBull Esspressor: 299
+- Ice Irish Tonic Black Coffee: 249
+- Ice Vietenamesse Brew: 189
+- Orange Black: 249
+
+### Maggie
+- Classic Maggie: 69
+- Veg Maggie: 89
+- Cheese Maggie: 89
+- Cheese Maggie (large): 129
+- Cheese Veg Maggie: 159

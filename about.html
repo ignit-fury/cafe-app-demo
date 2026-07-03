@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Reviews | Heart &amp; Brew Cafe and Restro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#76320f",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#4b3621",
+                    "on-primary-fixed-variant": "#59422c",
+                    "surface-variant": "#e8e1dd",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#773310",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#725a42",
+                    "secondary-fixed": "#ffdbcd",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-low": "#faf2ee",
+                    "surface-container-high": "#eee7e3",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "outline": "#80756c",
+                    "secondary": "#944925",
+                    "tertiary-fixed": "#e4e4cc",
+                    "primary": "#33210d",
+                    "tertiary-container": "#3a3b2a",
+                    "on-background": "#1e1b19",
+                    "inverse-on-surface": "#f7efeb",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1e1b19",
+                    "surface-bright": "#fff8f5",
+                    "inverse-surface": "#33302d",
+                    "background": "#fff8f5",
+                    "surface-dim": "#e0d9d5",
+                    "on-primary-container": "#bd9f83",
+                    "surface-container": "#f4ece9",
+                    "on-tertiary-container": "#a4a58f",
+                    "secondary-fixed-dim": "#ffb596",
+                    "on-primary-fixed": "#291806",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#fedcbe",
+                    "surface-container-highest": "#e8e1dd",
+                    "tertiary": "#242516",
+                    "inverse-primary": "#e1c1a4",
+                    "on-surface-variant": "#4e453d",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "secondary-container": "#fe9e72",
+                    "outline-variant": "#d2c4ba",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed": "#360f00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "container-max-width": "1200px",
+                    "unit": "8px",
+                    "stack-gap": "16px"
+            },
+            "fontFamily": {
+                    "label-bold": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-sm": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .soft-press {
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05), inset -2px -2px 5px rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<div class="fixed inset-0 grain-overlay z-[60]"></div>
+<!-- TopAppBar -->
+<header class="bg-surface/90 backdrop-blur-md fixed top-0 w-full z-50 shadow-md">
+<nav class="flex justify-between items-center px-margin-desktop h-20 max-w-container-max-width mx-auto">
+<a href="index.html" class="flex items-center gap-3">
+<img alt="Heart &amp; Brew Logo" class="h-10 w-10 rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWrmgQjbxArNyxsi45Wrz62hX-YahgzVVAJrIdt5EFp7DIHsxylBovJiUrbT3zxF58DTqULjlzhNxlDb57UEgTnw8wd0s2fy-GYuvSz-l7G7z6Nxor4cavsBjAgUVXKsiLmcygR2h86k3ZQW6grmvbB-n22aJexZts9C36fiePv2l6mgQx0l6hzkn_NNZTMWZDi-Cv0znIxKPF0JoELaQHC9_PL1KLdKi3S0hlrPpETbUjAVnlHGrTTNn2aSa9IANilhS-3QZ092J2">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Heart &amp; Brew</span>
+</a>
+<div class="hidden md:flex items-center gap-8 font-label-bold text-label-bold">
+<a class="text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200" href="index.html">Home</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 hover:scale-105 transition-transform duration-200" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200" href="menu.html">Menu</a>
+<a class="text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200" href="about.html#reviews">Reviews</a>
+<a class="text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200" href="about.html#about">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="admin.html" class="hidden md:flex items-center gap-1.5 border border-dashed border-outline text-on-surface-variant rounded-xl px-4 py-2 font-label-bold text-label-bold hover:border-secondary hover:text-secondary hover:scale-105 transition-all duration-200" title="Admin Panel (Demo)">
+    <span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+    Admin
+</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label-bold hover:scale-105 transition-transform duration-200 active:opacity-80">
+                Order Online
+            </button>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-12">
+<!-- Hero / Header Section -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-16">
+<div class="relative rounded-3xl overflow-hidden h-[400px] md:h-[500px] shadow-lg group">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1eg91Iil94VXv3ybjwuE2hS6_ZhtgdMgXNY0X4AZ8MmrGECsqDI7ro4gBclM6QUJ5onF8NQVjZfKIkh1JD4sUaDmzKqYSK298gFpCvKRjbXkhRdRWwtL380Hs8CHJgidV5YRrwRTxBD1gMucFurlb58YLFuFk5brN-KJWrqUYp3KP5nYDOELSM-WwkpMN5GVpycdA6fA9lYUS2XFmmca4r4ffZNtkL7RwMFMTaYdjvRXWlR-9nOGzdy0gODTEEk_BXiFqMaUoTJhq')"></div>
+<div class="absolute bottom-12 left-12 z-20 text-white animate-fade-in-up">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Our Story &amp; Space</h1>
+<p class="font-body-lg text-body-lg max-w-2xl opacity-90">Crafting the perfect cup and culinary delights in the heart of the city since 2024.</p>
+</div>
+</div>
+</section>
+<!-- About & Details Bento Grid -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-24" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Location Card -->
+<div class="md:col-span-7 bg-surface-container-low rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-4">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-bold">VISIT US</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Heart &amp; Brew Cafe</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                            GF SR 1, Shree Siddheshwar Business Harbour, Narayan Vidhyalay Road, Dabhoi - Waghodia Ring Rd, Vadodara, Gujarat 390025
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-3 bg-secondary text-on-secondary px-6 py-3 rounded-xl font-label-bold transition-all hover:scale-105" href="tel:09825060779">
+<span class="material-symbols-outlined">call</span>
+                            098250 60779
+                        </a>
+<a class="flex items-center gap-3 bg-white border border-outline-variant text-primary px-6 py-3 rounded-xl font-label-bold transition-all hover:bg-surface-variant/20" href="https://maps.google.com/?q=Shree+Siddheshwar+Business+Harbour+Vadodara" target="_blank">
+<span class="material-symbols-outlined">directions</span>
+                            Get Directions
+                        </a>
+</div>
+</div>
+<!-- Hours Card -->
+<div class="md:col-span-5 bg-primary-container text-on-primary-container rounded-3xl p-8 shadow-sm flex flex-col justify-center">
+<div class="flex items-center gap-2 text-primary-fixed-dim mb-4">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label-bold">OPERATING HOURS</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-on-primary-container/20 pb-2">
+<span class="font-label-bold text-on-primary-container">Daily</span>
+<span class="text-on-primary-container">11:30 am – 1:30 am</span>
+</div>
+<p class="text-sm opacity-80 pt-4">We are open 365 days a year, serving your favorite brews and meals from brunch till late night.</p>
+</div>
+</div>
+<!-- Map Integration -->
+<div class="md:col-span-12 rounded-3xl overflow-hidden h-[400px] shadow-sm border border-outline-variant/30">
+<iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8258385458025!2d73.2389658!3d22.2845942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5c6f600f72b%3A0xe54e69b59659b480!2sShree%20Siddheshwar%20Business%20Harbour!5e0!3m2!1sen!2sin!4v1719999999999!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!-- Amenities Grid -->
+<div class="md:col-span-12">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-8 px-2">Amenities &amp; Vibes</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center text-center gap-3 hover:bg-secondary-container transition-colors group">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary-container">wifi</span>
+<span class="font-label-bold text-on-surface-variant group-hover:text-on-secondary-container">High-Speed WiFi</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center text-center gap-3 hover:bg-secondary-container transition-colors group">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary-container">ac_unit</span>
+<span class="font-label-bold text-on-surface-variant group-hover:text-on-secondary-container">Fully Air-Conditioned</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center text-center gap-3 hover:bg-secondary-container transition-colors group">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary-container">music_note</span>
+<span class="font-label-bold text-on-surface-variant group-hover:text-on-secondary-container">Soothing Ambient Music</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center text-center gap-3 hover:bg-secondary-container transition-colors group">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary-container">local_parking</span>
+<span class="font-label-bold text-on-surface-variant group-hover:text-on-secondary-container">Ample Parking Space</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="bg-surface-container-low py-24" id="reviews">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">What Our Guests Say</h2>
+<div class="flex items-center gap-6">
+<div class="text-center">
+<div id="avg-rating-text" class="text-5xl font-bold text-secondary">4.6</div>
+<div class="flex text-secondary mt-1 justify-center" id="avg-stars-container">
+    <!-- Star elements -->
+</div>
+<div id="total-reviews-count" class="text-sm text-on-surface-variant mt-1">35 Reviews</div>
+</div>
+<div class="hidden sm:block w-[1px] h-20 bg-outline-variant"></div>
+<div class="hidden sm:flex flex-col gap-1 flex-1 min-w-[200px]" id="stars-breakdown">
+    <!-- Star rows -->
+</div>
+</div>
+</div>
+<button onclick="openReviewModal()" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-bold hover:shadow-lg transition-all active:scale-95">
+                        Write a review
+                    </button>
+</div>
+<div class="flex flex-wrap gap-3 mb-12">
+<span class="px-4 py-2 bg-white border border-secondary text-secondary rounded-full text-sm font-medium">hygiene</span>
+<span class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium">tea</span>
+<span class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium">ambience</span>
+<span class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium">varieties</span>
+<span class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium">coffee</span>
+<span class="px-4 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-full text-sm font-medium">food</span>
+</div>
+<div id="reviews-list-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Loaded dynamically -->
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest py-12 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-primary mb-4">Heart &amp; Brew</div>
+<p class="font-body-md text-on-surface-variant">Crafting moments over coffee and culinary delights since 2018.</p>
+</div>
+<div>
+<h4 class="font-label-bold text-primary mb-4">Contact Us</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-secondary cursor-pointer transition-colors">Address: GF SR 1, Shree Siddheshwar Business Harbour, Vadodara</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Phone: 098250 60779</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Hours: 11:30 am - 1:30 am Daily</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-primary mb-4">Follow Us</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-secondary cursor-pointer transition-colors">Facebook</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Instagram</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Twitter</li>
+</ul>
+</div>
+<div class="flex flex-col justify-between">
+<div class="bg-primary/5 p-4 rounded-xl">
+<p class="text-xs text-on-surface-variant font-label-bold mb-2">Subscribe to our newsletter</p>
+<div class="flex gap-2">
+<input class="bg-white border-none rounded-lg text-sm w-full focus:ring-secondary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mt-4">© 2026 Heart &amp; Brew Cafe and Restro. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Nav -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-md z-50 flex justify-around items-center py-3 border-t border-outline-variant/10 px-4">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-secondary" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-secondary" href="menu.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px]">Menu</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-secondary" href="reservations.html">
+<span class="material-symbols-outlined">event_seat</span>
+<span class="text-[10px]">Book</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-secondary" href="admin.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px]">Admin</span>
+</a>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+    function renderReviewsUI() {
+        const reviews = DB.getReviews();
+        
+        // Calculate Statistics
+        const count = reviews.length;
+        let avg = 0;
+        const counts = {1:0, 2:0, 3:0, 4:0, 5:0};
+
+        if (count > 0) {
+            let total = 0;
+            reviews.forEach(r => {
+                total += r.rating;
+                counts[r.rating]++;
+            });
+            avg = (total / count).toFixed(1);
+        } else {
+            avg = "0.0";
+        }
+
+        // Render counters
+        document.getElementById('avg-rating-text').textContent = avg;
+        document.getElementById('total-reviews-count').textContent = `${count} Reviews`;
+
+        // Render average stars
+        const avgNum = parseFloat(avg);
+        let starHtml = "";
+        for (let i = 1; i <= 5; i++) {
+            if (i <= Math.floor(avgNum)) {
+                starHtml += `<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>`;
+            } else if (i - 0.5 <= avgNum) {
+                starHtml += `<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star_half</span>`;
+            } else {
+                starHtml += `<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>`;
+            }
+        }
+        document.getElementById('avg-stars-container').innerHTML = starHtml;
+
+        // Render progress breakdown
+        let breakdownHtml = "";
+        for (let star = 5; star >= 1; star--) {
+            const rowCount = counts[star];
+            const pct = count > 0 ? ((rowCount / count) * 100).toFixed(0) : 0;
+            breakdownHtml += `
+                <div class="flex items-center gap-3 text-sm">
+                    <span class="w-4">${star}★</span>
+                    <div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+                        <div class="bg-secondary h-full" style="width: ${pct}%"></div>
+                    </div>
+                    <span class="w-4 text-right">${rowCount}</span>
+                </div>
+            `;
+        }
+        document.getElementById('stars-breakdown').innerHTML = breakdownHtml;
+
+        // Render Reviews Grid
+        const listContainer = document.getElementById('reviews-list-container');
+        if (reviews.length === 0) {
+            listContainer.innerHTML = `
+                <div class="col-span-2 flex flex-col items-center justify-center py-12 text-on-surface-variant/60">
+                    <span class="material-symbols-outlined text-5xl mb-3">rate_review</span>
+                    <p class="font-label-bold">No reviews yet.</p>
+                    <p class="text-xs">Be the first to share your thoughts!</p>
+                </div>
+            `;
+            return;
+        }
+
+        let reviewsHtml = "";
+        reviews.forEach(r => {
+            // Get initials
+            const initials = r.authorName.split(" ").map(n => n[0]).join("").toUpperCase().slice(0, 2);
+            let ratingStars = "";
+            for (let i = 1; i <= 5; i++) {
+                ratingStars += `<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' ${i <= r.rating ? 1 : 0};">star</span>`;
+            }
+
+            // Format date nicely
+            const dateStr = new Date(r.timestamp).toLocaleDateString('en-IN', {
+                year: 'numeric', month: 'short', day: 'numeric'
+            });
+
+            reviewsHtml += `
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10 relative hover:border-secondary/20 transition-all duration-300">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold">${initials}</div>
+                            <div>
+                                <h4 class="font-label-bold text-primary">${r.authorName}</h4>
+                                <p class="text-xs text-on-surface-variant">${dateStr}</p>
+                            </div>
+                        </div>
+                        <div class="flex text-secondary">
+                            ${ratingStars}
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">${r.text}</p>
+                </div>
+            `;
+        });
+        listContainer.innerHTML = reviewsHtml;
+    }
+
+    // Load UI
+    window.addEventListener('DOMContentLoaded', () => {
+        renderReviewsUI();
+    });
+
+    window.addEventListener('heart_brew_reviews_updated', () => {
+        renderReviewsUI();
+    });
+</script>
+</body></html>
