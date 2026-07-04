@@ -118,7 +118,7 @@
             color: #773310;
         }
     </style>
-</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col md:flex-row">
 <!-- Mobile Tab Bar (visible only on small screens) -->
 <nav class="md:hidden sticky top-0 z-40 bg-surface-container-low border-b border-outline-variant/20 flex items-center overflow-x-auto gap-1 px-2 h-14 shrink-0">
     <a href="index.html" class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-lg text-secondary font-label-bold text-[11px] hover:bg-secondary/10 transition-colors">
@@ -148,7 +148,6 @@
     </a>
 </nav>
 
-<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col md:flex-row">
 <div class="fixed inset-0 grain-overlay z-[-1]"></div>
 <!-- Side Navigation Bar (desktop only) -->
 <aside class="hidden md:flex w-64 bg-surface-container-low border-r border-outline-variant/20 flex-col z-40 h-screen sticky top-0">
@@ -194,7 +193,7 @@
 <!-- Main Content Area -->
 <main class="flex-1 min-w-0 p-margin-mobile md:p-margin-desktop space-y-stack-gap">
     <!-- Header -->
-    <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+    <header class="hidden md:flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
             <h2 class="font-display-lg text-display-lg text-primary">Admin Dashboard</h2>
             <p id="dashboard-tagline" class="text-on-surface-variant">Welcome back, manager. Here's what's happening today.</p>
